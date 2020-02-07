@@ -2,11 +2,16 @@
 @import 'partials/prefix-mixins';
 @import 'partials/layout'; // responsive grid and media queries
 
+//fonts
+@import url('https://fonts.googleapis.com/css?family=Orbitron:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Yellowtail&display=swap');
+
+
 // color palette - these colors will be the color swatches of the Colors section
 
-$color-1: #5f8ee4; // Cornflower Blue - Action color
+$color-1: #f374e0; // Pink
 $color-2: #19191a; // Dark Blue
-$color-3: #e4655f; // Red
+$color-3: #ccff00; // neon yellow
 $color-4: #e6e6e6; // light grey
 $color-5: #ffffff; // white
 
@@ -16,8 +21,9 @@ $success: #6fce72; // green
 $alert: $color-3; // red
 
 // fonts
-$primary-font: 'Merriweather', serif;
-$secondary-font: 'Open Sans', sans-serif;
+$primary-font: 'Verdana', sans-serif;
+$secondary-font: 'Orbitron', sans-serif;
+$secondary-header-font: 'Yellowtail', serif;
 
 /* -------------------------------- 
 
@@ -156,10 +162,12 @@ xTypography
 h1,
 h2 {
   font-family: $secondary-font;
-  color: $color-2;
+color: $color-2;
+    
 }
 
 h1 {
+    
   font-size: 2.4rem;
   font-weight: 300;
   line-height: 1.2;
@@ -175,14 +183,14 @@ h1 {
 }
 
 h2 {
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: 1em 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 1em 0;
 
-  @include MQ(S) {
+    @include MQ(S) {
     font-size: 1.8rem;
     margin: 1em 0 1.4em;
-  }
+ }
 }
 
 section > h2::before {
