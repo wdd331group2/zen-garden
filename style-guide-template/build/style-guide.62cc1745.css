@@ -71,7 +71,7 @@ xPatterns
 -------------------------------- */
 .cd-box {
   /* this is the container of various design elements - i.e. the 2 logo of the branding section */
-  border: 1px solid #e6e6e6;
+  border: 1px solid #ccff00;
   border-radius: 3px;
   background: #ffffff;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
@@ -211,7 +211,7 @@ h2 {
 
 section > h2::before {
   /* number before each section title */
-  color: silver;
+  color: #8fb300;
 }
 
 p {
@@ -302,7 +302,7 @@ xForm
 -------------------------------- */
 input[type=text],
 select {
-  border: 1px solid #e6e6e6;
+  border: 1px solid #ccff00;
   border-radius: 0.25em;
   background: #ffffff;
 }
@@ -365,7 +365,7 @@ input[type=checkbox] {
 .radio-label::before,
 .checkbox-label::before {
   left: 0;
-  border: 1px solid #e6e6e6;
+  border: 1px solid #ccff00;
   box-shadow: inset 1px 1px rgba(0, 0, 0, 0.03);
 }
 .radio-label::after,
@@ -923,13 +923,13 @@ section:nth-of-type(10) h2::before {
   background: #5c7b99;
 }
 .cd-colors li:nth-of-type(4) .cd-color-swatch {
-  background: #e6e6e6;
+  background: #ccff00;
 }
 .cd-colors li:nth-of-type(4) .cd-color-swatch::before {
-  background: #f3f3f3;
+  background: #d1ff1a;
 }
 .cd-colors li:nth-of-type(4) .cd-color-swatch::after {
-  background: #d9d9d9;
+  background: #b8e600;
 }
 .cd-colors li:nth-of-type(5) .cd-color-swatch {
   background: #ffffff;
