@@ -259,10 +259,10 @@ xButtons
   background: #82d485;
 }
 .btn.btn-alert {
-  background: #ccff00;
+  background: #6a88a5;
 }
 .no-touch .btn.btn-alert:hover {
-  background: #d1ff1a;
+  background: #7a95af;
 }
 .btn.btn-outline {
   color: #f374e0;
@@ -320,8 +320,8 @@ input[type=text].success {
   box-shadow: 0 0 6px rgba(111, 206, 114, 0.2);
 }
 input[type=text].alert {
-  border-color: #ccff00;
-  box-shadow: 0 0 6px rgba(204, 255, 0, 0.2);
+  border-color: #6a88a5;
+  box-shadow: 0 0 6px rgba(106, 136, 165, 0.2);
 }
 input[type=text]:focus {
   border-color: #f374e0;
@@ -914,13 +914,13 @@ section:nth-of-type(10) h2::before {
   background: #0d0d0d;
 }
 .cd-colors li:nth-of-type(3) .cd-color-swatch {
-  background: #ccff00;
+  background: #6a88a5;
 }
 .cd-colors li:nth-of-type(3) .cd-color-swatch::before {
-  background: #d1ff1a;
+  background: #7a95af;
 }
 .cd-colors li:nth-of-type(3) .cd-color-swatch::after {
-  background: #b8e600;
+  background: #5c7b99;
 }
 .cd-colors li:nth-of-type(4) .cd-color-swatch {
   background: #e6e6e6;
