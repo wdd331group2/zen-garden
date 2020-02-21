@@ -1,7 +1,1 @@
-{
-"version": 3,
-"mappings": "AAAA,aAAc;EACV,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,OAAO,EAAE,IAAI;;AAGjB,MAAO;EACH,MAAM,EAAE,eAAe;EACvB,MAAM,EAAE,MAAM;EACd,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EACnB,SAAS,EAAE,GAAG;EAEd,oCAA6C;IATjD,MAAO;MAUC,SAAS,EAAE,KAAK",
-"sources": ["../scss/partials/_layout.scss"],
-"names": [],
-"file": "main.css"
-}
+{"version":3,"sourceRoot":"","sources":["main.scss","partials/_layout.scss","partials/_typography.scss","partials/_variables.scss","partials/_colors.scss"],"names":[],"mappings":"AAMQ;AACA;ACaR;EACI;EACA;EACA;;;AAGJ;EACI;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EATJ;IAUQ;;;;ACpCR;AAAA;EAEE,aCKe;EDJjB;;;AAIA;EAEE;EACA;EACA;EACA;;ADJE;ECDJ;IAQI;;;ADJA;ECJJ;IAYI;;;;AAIJ;EACI;EACA;EACA;;ADlBA;ECeJ;IAMI;IACA;;;;AAIJ;EACE;EACA;EACA;;AAEA;EACE,OEtCM;EFuCN;;ADjCA;EC0BJ;IAWI;IACA","file":"main.css"}
