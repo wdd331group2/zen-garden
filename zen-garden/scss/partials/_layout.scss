@@ -1,3 +1,23 @@
+// media queries
+   
+$S:     768px;   
+$M:     1024px;     
+$L:     1600px; 
+
+@mixin MQ($canvas) {
+    @if $canvas == S {
+    @media only screen and (min-width: $S) { @content; } 
+    }
+    @else if $canvas == M {
+    @media only screen and (min-width: $M) { @content; } 
+    }
+    @else if $canvas == L {
+    @media only screen and (min-width: $L) { @content; } 
+    }
+}
+
+// plain css
+
 .page-wrapper {
     display: flex;
     flex-direction: column;
@@ -17,3 +37,4 @@ header {
         max-width: 992px;
     }
 }
+
