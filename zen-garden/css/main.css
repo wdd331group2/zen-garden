@@ -1,10 +1,56 @@
 @import url("https://fonts.googleapis.com/css?family=Orbitron:700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Yellowtail&display=swap");
 .page-wrapper {
-  display: flex;
-  flex-direction: column;
   padding: 24px;
-}
+  display: grid; }
+  @media only screen and (min-width: 1024px) {
+    .page-wrapper {
+      grid-template-columns: repeat(10, 1fr);
+      grid-template-rows: repeat(5, 20%); } }
+
+h1,
+h2,
+h3 {
+  font-family: "Orbitron", sans-serif;
+  color: #19191a;
+  text-align: center; }
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0 0 0.4em; }
+  @media only screen and (min-width: 768px) {
+    h1 {
+      font-size: 3.2rem; } }
+  @media only screen and (min-width: 1024px) {
+    h1 {
+      font-size: 4rem; } }
+
+h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 1em 0; }
+  @media only screen and (min-width: 768px) {
+    h2 {
+      font-size: 1.8rem;
+      margin: 1em 0 1.4em; } }
+
+h3 {
+  font-size: 1.5em; }
+
+p {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: #58585b;
+  font-family: "Verdana", sans-serif; }
+  p a {
+    color: #f374e0;
+    text-decoration: underline; }
+  @media only screen and (min-width: 768px) {
+    p {
+      font-size: 1.6rem;
+      line-height: 1.6; } }
 
 header {
   border: 1px solid black;
@@ -14,62 +60,32 @@ header {
   justify-content: center;
   align-items: center;
   max-width: 80%;
-}
-@media screen and (min-width: 992px) {
-  header {
-    max-width: 992px;
-  }
-}
+  padding: 16px; }
+  @media screen and (min-width: 992px) {
+    header {
+      max-width: 992px; } }
 
-h1,
-h2 {
-  font-family: "Orbitron", sans-serif;
-  color: #19191a;
-}
-
-h1 {
-  font-size: 2.4rem;
-  font-weight: 300;
-  line-height: 1.2;
-  margin: 0 0 0.4em;
-}
-@media only screen and (min-width: 768px) {
-  h1 {
-    font-size: 3.2rem;
-  }
-}
 @media only screen and (min-width: 1024px) {
-  h1 {
-    font-size: 4rem;
-  }
-}
+  .intro {
+    grid-column: 3 / 9;
+    grid-row: 1 / 2; } }
 
-h2 {
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: 1em 0;
-}
-@media only screen and (min-width: 768px) {
-  h2 {
-    font-size: 1.8rem;
-    margin: 1em 0 1.4em;
-  }
-}
+@media only screen and (min-width: 1024px) {
+  .main {
+    grid-column: 2 / 9; } }
 
-p {
-  font-size: 1.4rem;
-  line-height: 1.4;
-  color: #58585b;
-}
-p a {
-  color: #f374e0;
-  text-decoration: underline;
-}
-@media only screen and (min-width: 768px) {
-  p {
-    font-size: 1.6rem;
-    line-height: 1.6;
-  }
-}
+@media only screen and (min-width: 1024px) {
+  .sidebar {
+    grid-column: 9 / 11; } }
+
+@media only screen and (min-width: 1024px) {
+  footer {
+    grid-column: 3 / 9;
+    grid-row: 4 / 5; } }
+
+.summary,
+.preamble {
+  grid-column: 2 / 9;
+  grid-row: 3 / 4; }
 
 /*# sourceMappingURL=main.css.map */
