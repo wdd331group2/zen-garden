@@ -17,16 +17,19 @@ $L:     1600px;
 }
 
 // plain css
+body {
+    margin: 0;
+}
 
 .page-wrapper {
     padding: 24px;
     display: grid;
 
     @include MQ(M) {
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(5, 20%);
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(5, 20%);
+        padding: 30px 50px;
     }
 }
-
 
 
