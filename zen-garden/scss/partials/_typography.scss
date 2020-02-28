@@ -39,18 +39,18 @@ h3 {
 }
 
 p {
-  font-size: 1.4rem;
+  font-size: 1rem;
   line-height: 1.4;
   color: lighten($color-2, 25%);
   font-family: $primary-font;
 
-  a {
-    color: $color-1;
-    text-decoration: underline;
-  }
-
   @include MQ(S) {
-    font-size: 1.6rem;
+    font-size: 1rem;
     line-height: 1.6;
   }
+}
+
+a {
+  color: $color-1;
+  text-decoration: underline;
 }

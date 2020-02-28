@@ -1,12 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Orbitron:700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Yellowtail&display=swap");
+body {
+  margin: 0; }
+
 .page-wrapper {
   padding: 24px;
   display: grid; }
   @media only screen and (min-width: 1024px) {
     .page-wrapper {
       grid-template-columns: repeat(10, 1fr);
-      grid-template-rows: repeat(5, 20%); } }
+      grid-template-rows: repeat(5, 20%);
+      padding: 30px 50px; } }
 
 h1,
 h2,
@@ -40,52 +44,99 @@ h3 {
   font-size: 1.5em; }
 
 p {
-  font-size: 1.4rem;
+  font-size: 1rem;
   line-height: 1.4;
   color: #58585b;
   font-family: "Verdana", sans-serif; }
-  p a {
-    color: #f374e0;
-    text-decoration: underline; }
   @media only screen and (min-width: 768px) {
     p {
-      font-size: 1.6rem;
+      font-size: 1rem;
       line-height: 1.6; } }
 
+a {
+  color: #f374e0;
+  text-decoration: underline; }
+
 header {
-  border: 1px solid black;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   max-width: 80%;
-  padding: 16px; }
-  @media screen and (min-width: 992px) {
+  padding: 16px;
+  background-image: url(../assets/ZenMockupTransL.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 40vw; }
+  header h1, header h2 {
+    display: none; }
+  @media only screen and (min-width: 1024px) {
     header {
       max-width: 992px; } }
 
 @media only screen and (min-width: 1024px) {
   .intro {
-    grid-column: 3 / 9;
+    grid-column: 2 / 10;
     grid-row: 1 / 2; } }
 
-@media only screen and (min-width: 1024px) {
-  .main {
-    grid-column: 2 / 9; } }
+.summary,
+.preamble {
+  grid-column: 2 / 9;
+  grid-row: 3 / 4;
+  font-size: 1rem; }
 
-@media only screen and (min-width: 1024px) {
-  .sidebar {
-    grid-column: 9 / 11; } }
+.sidebar .select {
+  font-family: "Verdana", sans-serif; }
+.sidebar .design-name {
+  font-family: "Orbitron", sans-serif;
+  color: #f8f8ff; }
+.sidebar .designer-name {
+  font-family: "Yellowtail", serif;
+  color: #f374e0; }
+
+.main {
+  margin-top: 50px; }
+  .main div {
+    margin-bottom: 50px; }
+  @media only screen and (min-width: 1024px) {
+    .main {
+      margin-top: 80px; }
+      .main div {
+        margin-bottom: 80px; }
+        .main div:nth-child(odd) h3 {
+          text-align: left;
+          float: left;
+          padding-right: 24px;
+          width: 25%; }
+        .main div:nth-child(even) h3 {
+          text-align: right;
+          float: right;
+          padding-left: 24px;
+          width: 25%; } }
+
+.main {
+  order: 2; }
+  @media only screen and (min-width: 1024px) {
+    .main {
+      grid-column: 1 / 8;
+      order: 1; } }
+
+.sidebar {
+  order: 1; }
+  .sidebar li {
+    font-family: "Verdana", sans-serif; }
+  @media only screen and (min-width: 1024px) {
+    .sidebar {
+      grid-column: 8 / 11;
+      order: 2;
+      padding-left: 30px;
+      margin-top: 80px; } }
 
 @media only screen and (min-width: 1024px) {
   footer {
     grid-column: 3 / 9;
     grid-row: 4 / 5; } }
-
-.summary,
-.preamble {
-  grid-column: 2 / 9;
-  grid-row: 3 / 4; }
 
 /*# sourceMappingURL=main.css.map */

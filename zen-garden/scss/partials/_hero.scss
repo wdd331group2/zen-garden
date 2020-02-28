@@ -1,0 +1,35 @@
+header {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    padding: 16px;
+    background-image: url(../assets/ZenMockupTransL.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 40vw;
+    h1, h2 {
+        display: none;
+    }
+
+    @include MQ(M) {
+        max-width: 992px;
+    }
+}
+
+.intro {
+    @include MQ(M) {
+    grid-column: 2 / 10;
+    grid-row: 1 / 2;
+    }
+}
+
+.summary,
+.preamble {
+    grid-column: 2 / 9;
+    grid-row: 3 / 4;
+    font-size: 1rem;
+}
