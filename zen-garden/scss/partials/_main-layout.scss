@@ -5,6 +5,7 @@
     }
     @include MQ(M) {
     margin-top: 80px;
+    max-width: 1360px;
     div {
         margin-bottom: 80px;
 
@@ -31,7 +32,8 @@
 .main {
     order: 2;
     @include MQ(M) {
-    grid-column: 1 / 8;
+    grid-column: 2 / 8;
+    grid-row: 3 / 6;
     order: 1;
     }
 }

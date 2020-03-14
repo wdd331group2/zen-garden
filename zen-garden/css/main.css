@@ -2,7 +2,10 @@
 @import url("https://fonts.googleapis.com/css?family=Yellowtail&display=swap");
 body {
   margin: 0;
-  background-color: #000000;}
+  background-color: #000;
+  background-image: radial-gradient(#f8f8ff, rgba(255, 255, 255, 0.2) 2px, transparent 40px), radial-gradient(#f8f8ff, rgba(255, 255, 255, 0.15) 1px, transparent 30px), radial-gradient(#f8f8ff, rgba(255, 255, 255, 0.1) 2px, transparent 40px), radial-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1) 2px, transparent 30px);
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px; }
 
 .page-wrapper {
   padding: 24px;
@@ -11,13 +14,15 @@ body {
     .page-wrapper {
       grid-template-columns: repeat(10, 1fr);
       grid-template-rows: repeat(5, 20%);
-      padding: 30px 50px; } }
+      padding: 30px 50px;
+      max-width: 1700px;
+      margin: 0 auto; } }
 
 h1,
 h2,
 h3 {
   font-family: "Orbitron", sans-serif;
-  color: #f8f8ff;
+  color: #ccff00;
   text-align: center; }
 
 h1 {
@@ -57,30 +62,36 @@ p {
 a {
   color: #f374e0;
   text-decoration: underline; }
+  a:hover {
+    transition: all .2s;
+    transform: scale(2);
+    color: #ccff00;
+    box-shadow: 3px 3px 5px #ccff00; }
 
 header {
-  width: 80%;
+  width: 100%;
   background-image: url(../assets/ZenMockupTransL.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   height: 40vw;
-}
+  position: relative;
+  z-index: 10;
+  margin: 0 auto; }
   header h1, header h2 {
     display: none; }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1600px) {
     header {
-      margin: auto;
- } }
+      height: 26vw; } }
 
 @media only screen and (min-width: 1024px) {
   .intro {
     grid-column: 2 / 10;
-    grid-row: 1 / 3; 
+    grid-row: 1 / 3;
     display: grid;
-    grid-template-rows: 5fr 1fr 2fr;
-  }
- }
+    grid-template-rows: min-content;
+    max-width: 1020px;
+    margin: 0 auto; } }
 
 .summary,
 .preamble {
@@ -101,7 +112,8 @@ header {
     margin-bottom: 50px; }
   @media only screen and (min-width: 1024px) {
     .main {
-      margin-top: 80px; }
+      margin-top: 80px;
+      max-width: 1360px; }
       .main div {
         margin-bottom: 80px; }
         .main div:nth-child(odd) h3 {
@@ -119,7 +131,8 @@ header {
   order: 2; }
   @media only screen and (min-width: 1024px) {
     .main {
-      grid-column: 1 / 8;
+      grid-column: 2 / 8;
+      grid-row: 3 / 6;
       order: 1; } }
 
 .sidebar {
