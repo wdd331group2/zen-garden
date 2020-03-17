@@ -5,68 +5,95 @@ body {
   background-color: #000;
   background-image: radial-gradient(#f8f8ff, rgba(255, 255, 255, 0.2) 2px, transparent 40px), radial-gradient(#f8f8ff, rgba(255, 255, 255, 0.15) 1px, transparent 30px), radial-gradient(#f8f8ff, rgba(255, 255, 255, 0.1) 2px, transparent 40px), radial-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1) 2px, transparent 30px);
   background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
-  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px; }
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
 
 .page-wrapper {
   padding: 24px;
-  display: grid; }
-  @media only screen and (min-width: 1024px) {
-    .page-wrapper {
-      grid-template-columns: repeat(10, 1fr);
-      grid-template-rows: repeat(5, 20%);
-      padding: 30px 50px;
-      max-width: 1700px;
-      margin: 0 auto; } }
+  display: grid;
+}
+@media only screen and (min-width: 1024px) {
+  .page-wrapper {
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(5, 20%);
+    padding: 30px 50px;
+    max-width: 1700px;
+    margin: 0 auto;
+  }
+}
 
 h1,
 h2,
 h3 {
   font-family: "Orbitron", sans-serif;
   color: #ccff00;
-  text-align: center; }
+  text-align: center;
+}
 
 h1 {
   font-size: 2.4rem;
   font-weight: 300;
   line-height: 1.2;
-  margin: 0 0 0.4em; }
-  @media only screen and (min-width: 768px) {
-    h1 {
-      font-size: 3.2rem; } }
-  @media only screen and (min-width: 1024px) {
-    h1 {
-      font-size: 4rem; } }
+  margin: 0 0 0.4em;
+}
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 3.2rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
 
 h2 {
   font-weight: bold;
   text-transform: uppercase;
-  margin: 1em 0; }
-  @media only screen and (min-width: 768px) {
-    h2 {
-      font-size: 1.8rem;
-      margin: 1em 0 1.4em; } }
+  margin: 1em 0;
+}
+@media only screen and (min-width: 768px) {
+  h2 {
+    font-size: 1.8rem;
+    margin: 1em 0 1.4em;
+  }
+}
 
 h3 {
-  font-size: 1.5em; }
+  font-size: 1.5em;
+}
 
 p {
   font-size: 1rem;
   line-height: 1.4;
   color: #58585b;
-  font-family: "Verdana", sans-serif; }
-  @media only screen and (min-width: 768px) {
-    p {
-      font-size: 1rem;
-      line-height: 1.6; } }
+  font-family: "Verdana", sans-serif;
+}
+@media only screen and (min-width: 768px) {
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
 
 a {
   color: #f374e0;
-  text-decoration: underline; }
-  a:hover {
-    transition: all .2s;
-    transform: scale(2);
-    color: #ccff00;
-    box-shadow: 3px 3px 5px #ccff00; }
+  text-decoration: none;
+}
+a:hover {
+  transition: all 0.2s;
+  transform: scale(2);
+  color: #f374e0;
+  animation: neonGlow 2s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+@keyframes neonGlow {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 110, 199, 0.8), 0 0 20px rgba(255, 110, 199, 0.8), 0 0 22px rgba(255, 110, 199, 0.8), 0 0 40px rgba(255, 225, 244, 0.8), 0 0 60px rgba(255, 225, 244, 0.8), 0 0 80px rgba(255, 225, 244, 0.5), 0 0 100px rgba(255, 225, 244, 0.5), 0 0 140px rgba(255, 225, 244, 0.5), 0 0 200px rgba(255, 225, 244, 0.5);
+  }
+  100% {
+    text-shadow: 0 0 2px rgba(255, 110, 199, 0.8), 0 0 8px rgba(255, 110, 199, 0.8), 0 0 10px rgba(255, 110, 199, 0.8), 0 0 20px rgba(255, 225, 244, 0.8), 0 0 30px rgba(255, 225, 244, 0.8), 0 0 40px rgba(255, 225, 244, 0.8), 0 0 50px rgba(255, 225, 244, 0.5), 0 0 80px rgba(255, 225, 244, 0.5);
+  }
+}
 
 header {
   width: 100%;
@@ -77,78 +104,104 @@ header {
   height: 40vw;
   position: relative;
   z-index: 10;
-  margin: 0 auto; }
-  header h1, header h2 {
-    display: none; }
-  @media only screen and (min-width: 1600px) {
-    header {
-      height: 26vw; } }
+  margin: 0 auto;
+}
+header h1, header h2 {
+  display: none;
+}
+@media only screen and (min-width: 1600px) {
+  header {
+    height: 26vw;
+  }
+}
 
 @media only screen and (min-width: 1024px) {
   .intro {
-    grid-column: 2 / 10;
-    grid-row: 1 / 3;
+    grid-column: 2/10;
+    grid-row: 1/3;
     display: grid;
     grid-template-rows: min-content;
     max-width: 1020px;
-    margin: 0 auto; } }
+    margin: 0 auto;
+  }
+}
 
 .summary,
 .preamble {
-  font-size: 1rem; }
+  font-size: 1rem;
+}
 
 .sidebar .select {
-  font-family: "Verdana", sans-serif; }
+  font-family: "Verdana", sans-serif;
+}
 .sidebar .design-name {
   font-family: "Orbitron", sans-serif;
-  color: #f8f8ff; }
+  color: #f8f8ff;
+}
 .sidebar .designer-name {
   font-family: "Yellowtail", serif;
-  color: #f374e0; }
+  color: #f374e0;
+}
 
 .main {
-  margin-top: 50px; }
+  margin-top: 50px;
+}
+.main div {
+  margin-bottom: 50px;
+}
+@media only screen and (min-width: 1024px) {
+  .main {
+    margin-top: 80px;
+    max-width: 1360px;
+  }
   .main div {
-    margin-bottom: 50px; }
-  @media only screen and (min-width: 1024px) {
-    .main {
-      margin-top: 80px;
-      max-width: 1360px; }
-      .main div {
-        margin-bottom: 80px; }
-        .main div:nth-child(odd) h3 {
-          text-align: left;
-          float: left;
-          padding-right: 24px;
-          width: 25%; }
-        .main div:nth-child(even) h3 {
-          text-align: right;
-          float: right;
-          padding-left: 24px;
-          width: 25%; } }
+    margin-bottom: 80px;
+  }
+  .main div:nth-child(odd) h3 {
+    text-align: left;
+    float: left;
+    padding-right: 24px;
+    width: 25%;
+  }
+  .main div:nth-child(even) h3 {
+    text-align: right;
+    float: right;
+    padding-left: 24px;
+    width: 25%;
+  }
+}
 
 .main {
-  order: 2; }
-  @media only screen and (min-width: 1024px) {
-    .main {
-      grid-column: 2 / 8;
-      grid-row: 3 / 6;
-      order: 1; } }
+  order: 2;
+}
+@media only screen and (min-width: 1024px) {
+  .main {
+    grid-column: 2/8;
+    grid-row: 3/6;
+    order: 1;
+  }
+}
 
 .sidebar {
-  order: 1; }
-  .sidebar li {
-    font-family: "Verdana", sans-serif; }
-  @media only screen and (min-width: 1024px) {
-    .sidebar {
-      grid-column: 8 / 11;
-      order: 2;
-      padding-left: 30px;
-      margin-top: 80px; } }
+  order: 1;
+}
+.sidebar li {
+  font-family: "Verdana", sans-serif;
+}
+@media only screen and (min-width: 1024px) {
+  .sidebar {
+    grid-column: 8/11;
+    order: 2;
+    padding-left: 30px;
+    margin-top: 80px;
+  }
+}
 
 @media only screen and (min-width: 1024px) {
   footer {
-    grid-column: 3 / 9;
-    grid-row: 4 / 5; } }
+    grid-column: 3/9;
+    grid-row: 4/5;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
