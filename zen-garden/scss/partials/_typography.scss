@@ -38,6 +38,46 @@ h3 {
   font-size: 1.5em;
 }
 
+.main h3 {
+  position: relative;
+  height: 4vw;
+  text-shadow: 0px 0px 10px black;
+}
+
+.main h3::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -70%;
+  left: -50%;
+  z-index: -1;
+  background: url('../assets/triangle.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: .5;
+
+
+  animation: triangleAngle 100s linear infinite;
+}
+
+.participation h3::before {
+  @include MQ(M) {left: -25%;}
+
+}
+
+.requirements h3::before {
+  @include MQ(M) {left: -25%;}
+}
+
+@keyframes triangleAngle {
+  0% { transform: rotate(0deg) translatey(0vw) translatex(0vw); }
+  25% { transform: rotate(90deg) translatey(1.8vw) translatex(1.5vw); }
+  50% { transform: rotate(180deg) translatey(0vw) translatex(3.5vw); }
+  75% { transform: rotate(270deg) translatey(-1.8vw) translatex(1.5vw); }
+	100% { transform: rotate(360deg) translatey(0vw) translatex(0vw); }
+}
+
 p {
   font-size: 1rem;
   line-height: 1.4;
