@@ -81,7 +81,7 @@ h3 {
 p {
   font-size: 1rem;
   line-height: 1.4;
-  color: lighten($color-2, 25%);
+  color: lighten($color-2, 50%);
   font-family: $primary-font;
 
   @include MQ(S) {
